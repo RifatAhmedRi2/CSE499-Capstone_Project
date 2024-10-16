@@ -1,0 +1,28 @@
+{
+  "alpha_pattern": {},
+  "auto_mapping": {
+    "base_model_class": "SegformerForSemanticSegmentation",
+    "parent_library": "transformers.models.segformer.modeling_segformer"
+  },
+  "base_model_name_or_path": "nvidia/mit-b0",
+  "bias": "lora_only",
+  "fan_in_fan_out": false,
+  "inference_mode": true,
+  "init_lora_weights": true,
+  "layers_pattern": null,
+  "layers_to_transform": null,
+  "lora_alpha": 32,
+  "lora_dropout": 0.1,
+  "modules_to_save": [
+    "decode_head"
+  ],
+  "peft_type": "LORA",
+  "r": 32,
+  "rank_pattern": {},
+  "revision": null,
+  "target_modules": [
+    "query",
+    "value"
+  ],
+  "task_type": null
+}

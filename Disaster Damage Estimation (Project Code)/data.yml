@@ -1,0 +1,4 @@
+train : 'E:\xview_base\dataset\train\images'
+val : 'E:\xview_base\dataset\test\images'
+
+nc: 5
